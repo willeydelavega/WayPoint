@@ -5,8 +5,10 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
     // Start is called before the first frame update
+     Vector3 mousePos;
+    public  float guizmosRadius = 0.33f;
+
     
-    public  float guizmosRadius = 0.33f; 
     void Start()
     {
         
@@ -17,6 +19,9 @@ public class Waypoint : MonoBehaviour
     {
         
     }
+
+ 
+
 
 
     private void OnDrawGizmos()
